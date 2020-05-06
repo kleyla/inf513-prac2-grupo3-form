@@ -4,11 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
     <title>Practica 2</title>
 </head>
 
 <body>
+    <article class="back">
+        <div ></div>
+        <div>
+            <h1 class="titulo">Grupo 3</h1>
+            <p class="parrafo">Elabore un formulario de contacto que incluya: nombre, correo electrónico, celular, fecha de nacimiento, pais.
+                <br> Validar los datos del formulario(JavaScript y HTML5).</p>
+        </div>
+        <div class="card">
+            <h5 class="card-header">Propiedades de los controles HTML y CSS</h5>
+            <div class="card-body">
+                <h5 class="card-title">Completa los siguientes campos:</h5>
+                <form action="./recibido.html" method="GET" role="form" id="myForm" enctype="multipart/form-data">
+                    <div class=" form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Karen..."
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="celular">Celular</label>
+                            <input type="number" class="form-control" id="celular" name="celular" placeholder="+591.."
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha"
+                                placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="pais">Pais</label>
+                            <input type="text" class="form-control" id="pais" name="pais" placeholder="Bolivia.."
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="audio">Example file input</label>
+                            <input type="file" class="form-control-file" id="audio" name="audio">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="video">Example file input</label>
+                            <input type="file" class="form-control-file" id="video" name="video">
+                        </div>
 
+                    </div>
+                    <div class="right">
+                        <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <!-- <a href="#" type="submit" class="btn btn-primary">Enviar</a> -->
+        </div>
+        </div>
+
+    </article>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
