@@ -37,6 +37,15 @@ function verificarDatos(e) {
     email.className += " is-invalid";
     parent = email.parentElement;
     parent.appendChild(div);
+  } else if (!validarEmail(email.value)) {
+    // console.log("email falla");
+    const div = document.createElement("div");
+    div.className = "invalid-feedback";
+    text = document.createTextNode("Por favor inserta un email valido");
+    div.appendChild(text);
+    email.className += " is-invalid";
+    parent = email.parentElement;
+    parent.appendChild(div);
   }
   if (vacio(celular.value)) {
     const div = document.createElement("div");
@@ -68,6 +77,7 @@ function verificarDatos(e) {
   if (
     !vacio(nombre.value) &&
     !vacio(email.value) &&
+    validarEmail(email.value) &&
     !vacio(celular.value) &&
     !vacio(fecha.value) &&
     !vacio(pais.value)
@@ -80,4 +90,9 @@ function verificarDatos(e) {
 
 function vacio(dato) {
   return dato === "";
+}
+function validarEmail(valor) {
+  return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
+    valor
+  );
 }
