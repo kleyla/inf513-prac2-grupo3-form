@@ -12,13 +12,13 @@
 
 <body>
     <article class="back">
-        <div ></div>
         <div>
             <h1 class="titulo">Grupo 3</h1>
-            <p class="parrafo">Elabore un formulario de contacto que incluya: nombre, correo electrónico, celular, fecha de nacimiento, pais.
+            <p class="parrafo">Elabore un formulario de contacto que incluya: nombre, correo electrónico, celular, fecha
+                de nacimiento, pais.
                 <br> Validar los datos del formulario(JavaScript y HTML5).</p>
         </div>
-        <div class="card">
+        <div class="card card-tam">
             <h5 class="card-header">Propiedades de los controles HTML y CSS</h5>
             <div class="card-body">
                 <h5 class="card-title">Completa los siguientes campos:</h5>
@@ -36,19 +36,17 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="celular">Celular</label>
                             <input type="number" class="form-control" id="celular" name="celular" placeholder="+591.."
                                 required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="fecha">Fecha de nacimiento</label>
                             <input type="date" class="form-control" id="fecha" name="fecha"
                                 placeholder="name@example.com" required>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="pais">Pais</label>
                             <input type="text" class="form-control" id="pais" name="pais" placeholder="Bolivia.."
                                 required>
@@ -57,11 +55,11 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="audio">Example file input</label>
-                            <input type="file" class="form-control-file" id="audio" name="audio">
+                            <input type="file" accept=".mp3,audio/*" class="form-control-file" id="audio" name="audio">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="video">Example file input</label>
-                            <input type="file" class="form-control-file" id="video" name="video">
+                            <input type="file" accept="video/mp4,video/x-m4v,video/*" class="form-control-file" id="video" name="video">
                         </div>
 
                     </div>
@@ -70,10 +68,7 @@
                     </div>
                 </form>
             </div>
-            <!-- <a href="#" type="submit" class="btn btn-primary">Enviar</a> -->
         </div>
-        </div>
-
     </article>
     <script src="./assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
